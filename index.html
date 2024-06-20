@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易經占卜</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>易經占卜</h1>
+        <p>請先集中精神將想詢問的問題在心中想好，詢問答案不要以開放式詢問，例如：可問是否可以執行?往東是否適合?</p>
+        <div id="hexagram" class="hidden"></div>
+        <div id="details" class="hidden"></div>
+        <button id="startButton" onclick="generateHexagram()">開始占卜</button>
+        <button id="continueButton" class="hidden" onclick="generateHexagram()">繼續占卜</button>
+        <button id="resetButton" class="hidden" onclick="reset()">新問題重新占卜</button>
+        
+        <div id="animation" class="hidden">
+            <div id="animationText"></div>
+        </div>
+        <div id="result" class="hidden">
+            <h2>卦象</h2>
+            <p id="guaXiang"></p>
+            <h2>掛辭</h2>
+            <p id="guaCi"></p>
+            <h2>占卜結果</h2>
+            <p id="resultDetails"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
