@@ -2,9 +2,6 @@
 body {
     font-family: Arial, sans-serif;
 }
-#animationText {
-    font-size: 48px;
-}
 .hidden {
     display: none;
 }
@@ -28,4 +25,5 @@ body {
 
 #animationText {
     animation: blink 1s infinite;
+    font-size: 48px;
 }
